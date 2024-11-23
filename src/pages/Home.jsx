@@ -2,6 +2,7 @@ import React from 'react';
 import About from '../components/About';
 import FAQ from '../components/FAQ';
 import FlashyComponent from '../components/FlashyComponent.jsx';
+import SubscribeSection from '../components/SubscribeSection.jsx';
 export default function Home() {
   return (
     <div>
@@ -9,7 +10,7 @@ export default function Home() {
         <FlashyComponent />
       {/* About Section */}
       <About />
-
+      <SubscribeSection/>
       {/* FAQ Section */}
       <FAQ />
     </div>
