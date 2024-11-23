@@ -7,7 +7,7 @@ const MainLayout = () => {
     <>
       <NavBar />
       {/* <main className="p-4"> */}
-        <Outlet /> {/* Renders the current page */}
+        <Outlet /> 
       {/* </main> */}
     </>
   );

@@ -3,6 +3,7 @@ import About from '../components/About';
 import FAQ from '../components/FAQ';
 import FlashyComponent from '../components/FlashyComponent.jsx';
 import SubscribeSection from '../components/SubscribeSection.jsx';
+import Footer from '../components/Footer.jsx';
 export default function Home() {
   return (
     <div>
@@ -13,6 +14,7 @@ export default function Home() {
       <SubscribeSection/>
       {/* FAQ Section */}
       <FAQ />
+      <Footer/>
     </div>
   );
 }
