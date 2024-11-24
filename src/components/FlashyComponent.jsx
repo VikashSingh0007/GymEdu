@@ -1,5 +1,3 @@
-import { ChevronUpIcon } from '@heroicons/react/20/solid';
-
 export default function FullScreenHeaderImage() {
   return (
     <div
@@ -27,7 +25,7 @@ export default function FullScreenHeaderImage() {
 
       {/* Overlay Content */}
       <div
-        className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 backdrop-blur-sm text-center px-6 md:px-12"
+        className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-40 backdrop-blur-sm text-center px-4 md:px-8"
         style={{
           display: 'flex',
           flexDirection: 'column',
@@ -37,7 +35,7 @@ export default function FullScreenHeaderImage() {
       >
         {/* Main Title */}
         <h1
-          className="text-6xl md:text-7xl font-extrabold text-white mb-6 leading-tight tracking-wider text-shadow-lg drop-shadow-2xl animate__animated animate__fadeInUp animate__delay-1s"
+          className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white mb-6 leading-tight tracking-wider text-shadow-lg drop-shadow-2xl animate__animated animate__fadeInUp animate__delay-1s"
           style={{
             textShadow: '0 6px 12px rgba(0, 0, 0, 0.5), 0 3px 6px rgba(0, 0, 0, 0.3)',
             lineHeight: '1.2',
@@ -49,22 +47,22 @@ export default function FullScreenHeaderImage() {
 
         {/* Description */}
         <p
-          className="text-white text-lg md:text-xl leading-relaxed mb-8 max-w-3xl mx-auto drop-shadow-md animate__animated animate__fadeInUp animate__delay-2s"
+          className="text-white text-sm md:text-base lg:text-lg leading-relaxed mb-6 md:mb-8 max-w-3xl mx-auto drop-shadow-md animate__animated animate__fadeInUp animate__delay-2s"
           style={{
             textShadow: '0 4px 6px rgba(0, 0, 0, 0.3), 0 1px 3px rgba(0, 0, 0, 0.1)',
             maxWidth: '800px',
             fontFamily: "'Roboto', sans-serif",
-            letterSpacing: '1px',
+            letterSpacing: '0.5px',
           }}
         >
           Elevate your fitness with our expert resources and guidance. Join the GymEdu community and unlock your full potential.
         </p>
 
         {/* Call-to-Action Buttons */}
-        <div className="flex items-center justify-center space-x-6 mt-8 animate__animated animate__fadeInUp animate__delay-3s">
+        <div className="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 mt-6 md:mt-8 animate__animated animate__fadeInUp animate__delay-3s">
           <a
             href="#about"
-            className="inline-flex items-center rounded-full bg-gradient-to-r from-indigo-600 to-pink-500 px-8 py-4 text-lg font-semibold text-white shadow-lg transform transition-transform hover:scale-110 hover:from-pink-500 hover:to-indigo-600 focus:outline-none focus:ring-4 focus:ring-indigo-400 focus:ring-offset-2"
+            className="inline-flex items-center rounded-md bg-gradient-to-r from-indigo-500 to-pink-400 px-5 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium text-white shadow-lg transform transition-transform hover:scale-105 hover:from-pink-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2"
             style={{
               transition: 'transform 0.3s ease-in-out, background-color 0.3s ease',
               fontFamily: "'Poppins', sans-serif",
@@ -74,7 +72,7 @@ export default function FullScreenHeaderImage() {
           </a>
           <a
             href="#learn-more"
-            className="inline-flex items-center rounded-full border-2 border-white px-8 py-4 text-lg font-semibold text-white hover:bg-white hover:text-indigo-600 transition-transform transform hover:scale-110"
+            className="inline-flex items-center rounded-md border-2 border-white px-5 py-2 md:px-6 md:py-3 text-sm md:text-base font-medium text-white hover:bg-white hover:text-indigo-600 transition-transform transform hover:scale-105"
             style={{
               transition: 'transform 0.3s ease-in-out, background-color 0.3s ease',
               fontFamily: "'Poppins', sans-serif",

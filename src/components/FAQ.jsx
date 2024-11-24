@@ -31,15 +31,17 @@ export default function FAQ() {
           {faqs.map((faq, index) => (
             <Disclosure key={index} as="div" className="mt-6">
               {({ open }) => (
-                <>
+                <div
+                  className={`transition-all duration-300 ${
+                    open ? 'bg-indigo-100 rounded-xl' : 'bg-gray-100 rounded-xl'
+                  } shadow-md`}
+                >
                   <DisclosureButton
-                    className={`flex w-full justify-between rounded-xl px-6 py-5 text-left text-lg font-semibold ${
-                      open
-                        ? 'bg-indigo-100 text-indigo-900'
-                        : 'bg-gray-100 text-gray-800'
+                    className={`flex w-full justify-between items-center px-6 py-5 text-left text-lg font-semibold rounded-xl ${
+                      open ? 'text-indigo-900' : 'text-gray-800'
                     } hover:bg-indigo-200 hover:text-indigo-900 focus:outline-none focus-visible:ring focus-visible:ring-indigo-300`}
                   >
-                    <span className="font-semibold">{faq.question}</span>
+                    <span>{faq.question}</span>
                     <ChevronUpIcon
                       className={`${
                         open ? 'rotate-180 transform' : ''
@@ -48,12 +50,12 @@ export default function FAQ() {
                   </DisclosureButton>
                   <DisclosurePanel
                     className={`${
-                      open ? 'max-h-screen' : 'max-h-0 overflow-hidden'
-                    } text-gray-700 text-base leading-relaxed transition-all duration-500 ease-in-out mt-4`}
+                      open ? 'max-h-screen opacity-100 py-4' : 'max-h-0 opacity-0'
+                    } overflow-hidden text-gray-700 text-base leading-relaxed px-6 transition-all duration-500 ease-in-out`}
                   >
                     {faq.answer}
                   </DisclosurePanel>
-                </>
+                </div>
               )}
             </Disclosure>
           ))}
