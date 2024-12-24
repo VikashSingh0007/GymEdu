@@ -1,10 +1,11 @@
 import React from 'react';
-
+import TransformationPage from '../components/Transformation';
+import Footer from '../components/Footer';
 const Transformations = () => {
   return (
     <div>
-      <h1>Transformations Page</h1>
-      <p>See inspiring stories of transformations from our users.</p>
+      <TransformationPage/>
+      <Footer/>
     </div>
   );
 };

@@ -1,23 +1,23 @@
-import React from 'react';
-import { Disclosure, DisclosureButton } from '@headlessui/react';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { FaInstagram, FaTwitter, FaPhoneAlt, FaYoutube } from 'react-icons/fa'; // Added FaYoutube
-import { MdEmail } from 'react-icons/md';
-import { useLocation } from 'react-router-dom';
+import React from "react";
+import { Disclosure, DisclosureButton } from "@headlessui/react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { FaInstagram, FaTwitter, FaPhoneAlt, FaYoutube } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { Link, useLocation } from "react-router-dom";
 
 // Navigation Links
 const navigation = [
-  { name: 'HOME', href: '/' },
-  { name: 'COURSE', href: '/course' },
-  { name: 'COACHING', href: '/coaching' },
-  { name: 'PRICING', href: '/pricing' },
-  { name: 'TRANSFORMATIONS', href: '/transformations' },
-  { name: 'BLOG', href: '/blog' },
+  { name: "HOME", href: "/" },
+  { name: "COURSE", href: "/course" },
+  { name: "COACHING", href: "/coaching" },
+  { name: "PRICING", href: "/pricing" },
+  { name: "TRANSFORMATIONS", href: "/transformations" },
+  { name: "BLOG", href: "/blog" },
 ];
 
 // Utility function for classNames
 function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
+  return classes.filter(Boolean).join(" ");
 }
 
 export default function NavBar() {
@@ -101,30 +101,30 @@ export default function NavBar() {
                   {/* Navigation Links */}
                   <div className="hidden sm:ml-6 sm:flex sm:space-x-4">
                     {navigation.map((item) => (
-                      <a
+                      <Link
                         key={item.name}
-                        href={item.href}
+                        to={item.href}
                         className={classNames(
                           location.pathname === item.href
-                            ? 'bg-gradient-to-r from-purple-600 to-indigo-600 text-white'
-                            : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                          'rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200 ease-in-out'
+                            ? "bg-gradient-to-r from-purple-600 to-indigo-600 text-white"
+                            : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                          "rounded-md px-3 py-2 text-sm font-medium transition-colors duration-200 ease-in-out"
                         )}
                       >
                         {item.name}
-                      </a>
+                      </Link>
                     ))}
                   </div>
                 </div>
 
                 {/* Enroll Now Button */}
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                  <a
-                    href="#enroll"
+                  <Link
+                    to="/enroll"
                     className="rounded-full bg-gradient-to-r from-indigo-500 to-purple-600 px-6 py-3 text-sm font-medium text-white hover:from-purple-500 hover:to-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 shadow-md"
                   >
                     ENROLL NOW
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -135,13 +135,13 @@ export default function NavBar() {
                 {navigation.map((item) => (
                   <DisclosureButton
                     key={item.name}
-                    as="a"
-                    href={item.href}
+                    as={Link}
+                    to={item.href}
                     className={classNames(
                       location.pathname === item.href
-                        ? 'bg-gray-800 text-white'
-                        : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                      'block rounded-md px-3 py-2 text-base font-medium transition-colors duration-200 ease-in-out'
+                        ? "bg-gray-800 text-white"
+                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                      "block rounded-md px-3 py-2 text-base font-medium transition-colors duration-200 ease-in-out"
                     )}
                   >
                     {item.name}

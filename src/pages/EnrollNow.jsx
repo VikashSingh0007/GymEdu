@@ -1,14 +1,13 @@
 import React from 'react';
-import BlogPage from '../components/blog/Blog';
+import EnrollNow from '../components/enroll/EnrollNow';
 import Footer from '../components/Footer';
-const Blog = () => {
+const Pricing = () => {
   return (
     <div>
-      <BlogPage/>
+      <EnrollNow/>
       <Footer/>
     </div>
   );
 };
 
-export default Blog;
-    
+export default Pricing;

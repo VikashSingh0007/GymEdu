@@ -1,10 +1,11 @@
 import React from 'react';
-
+import Pricingg from '../components/pricing/Pricing';
+import Footer from '../components/Footer';
 const Pricing = () => {
   return (
     <div>
-      <h1>Pricing Page</h1>
-      <p>Check out our competitive pricing for all our offerings.</p>
+      <Pricingg/>
+      <Footer/>
     </div>
   );
 };

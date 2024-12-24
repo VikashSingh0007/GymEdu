@@ -7,7 +7,7 @@ import Coaching from './pages/Coaching';
 import Pricing from './pages/Pricing';
 import Transformation from './pages/Transformation';
 import Blog from './pages/Blog';
-
+import Enroll from './pages/EnrollNow';
 const App = () => {
   return (
     <Router>
@@ -20,8 +20,9 @@ const App = () => {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/transformations" element={<Transformation />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/enroll" element={<Enroll />} />
         </Route>
-      </Routes>
+      </Routes> 
     </Router>
   );
 };
