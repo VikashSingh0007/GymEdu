@@ -18,7 +18,7 @@ export default function FullScreenHeaderImage() {
       <div className="absolute inset-0">
         <img
           src="https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?t=st=1732371738~exp=1732375338~hmac=e0f0084f7482b3808a04085d5cab50e722efe291c3024cb37b6fd0dac45ab8d4&w=826"
-          alt="GymEdu - Transform Your Fitness"
+          alt="Reactance - Transform Your Fitness"
           className="object-cover w-full h-full opacity-70 hover:opacity-100 transition-opacity duration-500 transform hover:scale-110"
         />
       </div>
@@ -42,7 +42,7 @@ export default function FullScreenHeaderImage() {
             fontFamily: "'Poppins', sans-serif",
           }}
         >
-          Welcome to <span className="text-pink-400">GymEdu</span>
+          Welcome to <span className="text-pink-400">Reactance</span>
         </h1>
 
         {/* Description */}
@@ -55,7 +55,7 @@ export default function FullScreenHeaderImage() {
             letterSpacing: '0.5px',
           }}
         >
-          Elevate your fitness with our expert resources and guidance. Join the GymEdu community and unlock your full potential.
+          Elevate your fitness with our expert resources and guidance. Join the Reactance community and unlock your full potential.
         </p>
 
         {/* Call-to-Action Buttons */}

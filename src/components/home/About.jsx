@@ -13,7 +13,7 @@ export default function About() {
           {/* Left Image Section with Hover Effect */}
           <div className="relative group">
             <img
-              src="https://images.unsplash.com/photo-1719937051058-63705ed35502?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              src='/assets/Artboard 1 copy 3.png'
               alt="About Us"
               className="rounded-3xl shadow-md object-cover w-full h-auto max-w-md transition-transform duration-500 group-hover:scale-105"
             />

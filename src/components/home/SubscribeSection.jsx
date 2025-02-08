@@ -8,7 +8,7 @@ export default function SubscribeSection() {
               Subscribe & Get 2 FREE GUIDES!
             </h2>
             <p className="text-base md:text-lg mb-6 leading-relaxed max-w-3xl mx-auto md:mx-0 text-gray-500">
-              The GymEdu Letter is my weekly newsletter, where I share my best stuff.
+              The Reactance Letter is my weekly newsletter, where I share my best stuff.
               <br />
               <strong>No Spam. No Ads.</strong><br />
               Get the most powerful ideas to build your best life - fitness, lifestyle design & self-management.

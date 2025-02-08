@@ -1,5 +1,4 @@
 import 'font-awesome/css/font-awesome.min.css';
-
 export default function Footer() {
   return (
     <footer className="bg-gray-300 text-gray-800 py-8"> {/* Changed bg-gray-800 to bg-gray-200 */}
@@ -8,13 +7,13 @@ export default function Footer() {
           {/* Column 1 - Company Name */}
           <div className="text-center">
             <img
-              src="https://img.freepik.com/free-vector/abstract-logo-flame-shape_1043-44.jpg?t=st=1732399322~exp=1732402922~hmac=a4643fa7e748d982f4b8dd77fc24d73bdf7c86209a28e1cd83180ffa48de213e&w=740"  // Replace with the actual path to your logo
+              src='/assets/Artboard 1 copy 3.png'
               alt="GYMEDU Logo"
               className="mx-auto mb-4 h-12"  // Adjust logo size here (h-12 is an example size)
             />
-            <h3 className="text-2xl font-bold text-gray-700">GYMEDU</h3> {/* Adjusted text color to gray-700 for better contrast */}
+            <h3 className="text-2xl font-bold text-gray-700">Reactance</h3> {/* Adjusted text color to gray-700 for better contrast */}
             <p className="text-sm mt-2 text-gray-600">
-              &copy; 2024 GYMEDU. All rights reserved.
+              &copy; 2024 Reactance. All rights reserved.
             </p>
           </div>
 

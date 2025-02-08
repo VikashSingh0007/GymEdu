@@ -94,7 +94,7 @@ export default function NavBar() {
                   <div className="flex items-center">
                     <img
                       alt="Your Company"
-                      src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=500"
+                      src='/assets/Artboard 1 copy 3.png'
                       className="h-8 w-auto"
                     />
                   </div>
