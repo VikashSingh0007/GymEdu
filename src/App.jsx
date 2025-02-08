@@ -10,7 +10,7 @@ import Blog from './pages/Blog';
 import Enroll from './pages/EnrollNow';
 const App = () => {
   return (
-    <Router>
+    <Router> 
       <Routes>
         <Route element={<MainLayout />}>
           {/* Routes */}
