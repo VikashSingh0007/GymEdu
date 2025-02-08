@@ -32,7 +32,7 @@ const About = ({ data = aboutData }) => {
             <p className="max-w-xl mx-auto mb-8 text-base leading-relaxed text-gray-700 sm:text-lg">
               {description}
             </p>
-            <div className="flex flex-col items-center justify-center mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 sm:mt-8">
+            <div className="flex flex-col items-center justify-start mt-6 space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 sm:mt-8">
               {/* Dynamic Buttons */}
               {buttons.map((button, index) => (
                 <a

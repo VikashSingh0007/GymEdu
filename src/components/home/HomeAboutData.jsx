@@ -1,6 +1,6 @@
 
 export const aboutData = {
-    title: "About Us",
+    title: "About",
     highlight: "Us",
     description:
       "Welcome to our platform! We are dedicated to providing high-quality courses, coaching, and resources. Our goal is to help you transform your skills and achieve your ambitions.",
