@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainLayout from './components/layout/MainLayout';
 import Home from './pages/Home';
@@ -10,9 +10,10 @@ import Blog from './pages/Blog';
 import Enroll from './pages/EnrollNow';
 import TitleUpdater from './pages/TitleUpdater';
 const App = () => {
+  const [isLoading, setIsLoading] = useState(false); 
   return (
     <Router> 
-      <TitleUpdater /> 
+      <TitleUpdater setIsLoading={setIsLoading} isLoading={isLoading} /> 
       <Routes>
         <Route element={<MainLayout />}>
           {/* Routes */}

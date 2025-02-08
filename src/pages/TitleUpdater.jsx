@@ -1,38 +1,62 @@
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
 
-
-const TitleUpdater = () => {
+const TitleUpdater = ({ setIsLoading,isLoading }) => {
   const location = useLocation();
 
   useEffect(() => {
+    setIsLoading(true); 
+    let title = 'Resistance'; 
     switch (location.pathname) {
       case '/':
-        document.title = 'Home';
+        title = 'Home';
         break;
       case '/course':
-        document.title = 'Course';
+        title = 'Course';
         break;
       case '/coaching':
-        document.title = 'Coaching';
+        title = 'Coaching';
         break;
       case '/pricing':
-        document.title = 'Pricing';
+        title = 'Pricing';
         break;
       case '/transformations':
-        document.title = 'Transformations';
+        title = 'Transformations';
         break;
       case '/blog':
-        document.title = 'Blog';
+        title = 'Blog';
         break;
       case '/enroll':
-        document.title = 'Enroll';
+        title = 'Enroll';
         break;
       default:
-        document.title = 'Resistance';
+        title = 'Resistance';
     }
-  }, [location.pathname]);
+    let intervalId;
+    if (isLoading) {
+      let dots = 0;
+      intervalId = setInterval(() => {
+        document.title = `${title}${'.'.repeat(dots)}`; 
+        dots = (dots + 1) % 4; 
+      }, 500); 
+    } else {
+      document.title = title;
+    }
+    const favicon = document.getElementById('favicon');
+    if (favicon) {
+      favicon.href = `/assets/${location.pathname === '/' ? 'home' : location.pathname.slice(1)}-favicon.png`;
+    }
+    const timer = setTimeout(() => {
+      setIsLoading(false); 
+    }, 1000); 
+
+    return () => {
+      clearTimeout(timer);
+      clearInterval(intervalId);
+    };
+  }, [location.pathname, setIsLoading, isLoading]);
 
   return null; 
 };
+
 export default TitleUpdater;
