@@ -8,9 +8,11 @@ import Pricing from './pages/Pricing';
 import Transformation from './pages/Transformation';
 import Blog from './pages/Blog';
 import Enroll from './pages/EnrollNow';
+import TitleUpdater from './pages/TitleUpdater';
 const App = () => {
   return (
     <Router> 
+      <TitleUpdater /> 
       <Routes>
         <Route element={<MainLayout />}>
           {/* Routes */}

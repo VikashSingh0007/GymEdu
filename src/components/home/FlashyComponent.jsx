@@ -1,9 +1,13 @@
 
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import {headerData} from './HomeData';
 
 const FullScreenHeaderImage = () => {
+  useEffect(() => {
+    document.title = 'Home';
+  }, []);
+
   const {
     backgroundImage,
     title,

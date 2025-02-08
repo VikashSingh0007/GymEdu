@@ -8,7 +8,7 @@ import TopBar from "../../pages/TopBar";
 // Navigation Links
 const navigation = [
   { name: "HOME", href: "/" },
-  { name: "COURSE", href: "/course" },
+  // { name: "COURSE", href: "/course" },
   { name: "COACHING", href: "/coaching" },
   { name: "PRICING", href: "/pricing" },
   { name: "TRANSFORMATIONS", href: "/transformations" },
