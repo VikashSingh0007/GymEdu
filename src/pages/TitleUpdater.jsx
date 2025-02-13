@@ -42,10 +42,10 @@ const TitleUpdater = ({ setIsLoading,isLoading }) => {
     } else {
       document.title = title;
     }
-    const favicon = document.getElementById('favicon');
-    if (favicon) {
-      favicon.href = `/assets/${location.pathname === '/' ? 'home' : location.pathname.slice(1)}-favicon.png`;
-    }
+    // const favicon = document.getElementById('favicon');
+    // if (favicon) {
+    //   favicon.href = `/assets/${location.pathname === '/' ? 'home' : location.pathname.slice(1)}-favicon.png`;
+    // }
     const timer = setTimeout(() => {
       setIsLoading(false); 
     }, 1000); 
