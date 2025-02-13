@@ -75,7 +75,7 @@ export default function NavBar() {
                 <div className="flex items-center">
                   <img
                     alt="Your Company"
-                    src='public/images/Artboard 1 copy 2.png'
+                    src='/images/Artboard 1 copy 2.png'
                     className="w-auto h-16"
                   />
                 </div>
