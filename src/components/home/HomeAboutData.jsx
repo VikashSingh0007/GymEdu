@@ -4,7 +4,7 @@ export const aboutData = {
     highlight: "Us",
     description:
       "Welcome to our platform! We are dedicated to providing high-quality courses, coaching, and resources. Our goal is to help you transform your skills and achieve your ambitions.",
-    image: "public/assets/images/GPTempDownload 227.jpg",
+    image: "public/images/GPTempDownload 227.jpg",
     buttons: [
       {
         text: "Get Started",

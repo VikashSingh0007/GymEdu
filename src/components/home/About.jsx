@@ -19,9 +19,9 @@ const About = ({ data = aboutData }) => {
             <img
               src={image}
               alt="About Us"
-              className="object-cover w-full h-auto max-w-md transition-transform duration-500 shadow-md rounded-3xl group-hover:scale-105"
+              className="object-cover w-full h-auto max-w-md rounded-3xl"
             />
-            <div className="absolute inset-0 transition-opacity duration-500 opacity-0 rounded-3xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 group-hover:opacity-20"></div>
+            {/* <div className="absolute inset-0 transition-opacity duration-500 opacity-0 rounded-3xl bg-gradient-to-tr from-indigo-500 via-purple-500 to-pink-500 group-hover:opacity-20"></div> */}
           </div>
 
           {/* Right Content Section */}
