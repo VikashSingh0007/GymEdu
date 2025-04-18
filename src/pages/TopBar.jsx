@@ -14,7 +14,7 @@ const TopBar = ({ contactInfo, socialLinks }) => {
             <span className="font-medium">{contactInfo.phone}</span>
           </div>
           {/* Email */}
-          <div className="items-center hidden space-x-1 sm:flex">
+          <div className="flex items-center space-x-1">
             <MdEmail className="w-5 h-5 text-white" aria-hidden="true" />
             <span className="font-medium">{contactInfo.email}</span>
           </div>
