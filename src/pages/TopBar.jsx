@@ -7,7 +7,7 @@ const TopBar = ({ contactInfo, socialLinks }) => {
     <div className="py-2 text-sm text-white shadow-md bg-gradient-to-r from-indigo-800 via-purple-800 to-pink-800">
       <div className="container flex items-center justify-between px-4 mx-auto sm:px-6 lg:px-8">
         {/* Contact Info */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 sm:space-x-6">
           {/* Phone */}
           <div className="flex items-center space-x-1">
             <FaPhoneAlt className="w-4 h-4 text-white" aria-hidden="true" />
@@ -21,7 +21,7 @@ const TopBar = ({ contactInfo, socialLinks }) => {
         </div>
 
         {/* Social Icons */}
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center space-x-4 sm:space-x-6">
           {socialLinks.map((social) => (
             <a
               key={social.name}
