@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"; 
+import React from "react";
 import { Link } from "react-router-dom";
 
 const pricingPlans = [
@@ -89,21 +89,6 @@ const pricingPlans = [
 ];
 
 const Pricing = () => {
-  const [showDetails, setShowDetails] = useState(false);
-
-  const handleClick = () => {
-    setShowDetails((prev) => {
-      const newState = !prev;
-      setTimeout(() => {
-        if (newState) {
-          const el = document.getElementById("details");
-          if (el) el.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 100); 
-      return newState;
-    });
-  };
-
   return (
     <div className="px-6 py-16 bg-gradient-to-b from-gray-100 to-gray-300">
       <div className="mx-auto max-w-7xl">
@@ -115,6 +100,7 @@ const Pricing = () => {
           challenges to lifelong transformations.
         </p>
 
+        {/* Plans */}
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {pricingPlans.map((plan, index) => (
             <div
@@ -125,16 +111,19 @@ const Pricing = () => {
                   : "bg-white"
               } rounded-lg shadow-md p-8 hover:shadow-xl transition-shadow`}
             >
+              {/* Badge */}
               {plan.badge && (
                 <div className="inline-block px-3 py-1 mb-4 text-xs font-medium text-white bg-indigo-600 rounded-full">
                   {plan.badge}
                 </div>
               )}
 
+              {/* Title */}
               <h2 className="mb-4 text-2xl font-bold text-gray-800">
                 {plan.title}
               </h2>
 
+              {/* Price */}
               <p className="mb-2 text-3xl font-semibold text-indigo-600">
                 {plan.price}
               </p>
@@ -142,8 +131,10 @@ const Pricing = () => {
                 {plan.discount}
               </p>
 
+              {/* Description */}
               <p className="mb-6 text-gray-600">{plan.description}</p>
 
+              {/* Features */}
               <ul className="mb-6 space-y-2 text-sm text-gray-700">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center">
@@ -152,6 +143,8 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
+
+              {/* Call to Action */}
 
               <Link
                 to="/enroll"
@@ -166,49 +159,39 @@ const Pricing = () => {
         {/* Additional Section */}
         <div className="mt-16 text-center">
           <h2 className="mb-4 text-3xl font-bold text-gray-800">
-            Why Choose Our Plans?
+            Annu
           </h2>
           <p className="max-w-3xl mx-auto mb-8 text-gray-700">
             With years of experience and a proven track record of success, we
             provide scientifically backed fitness solutions. Whether you're a
             beginner or a seasoned athlete, we have something for everyone.
           </p>
+         
+          <a
+                href="#details"
+                className="inline-block px-6 py-3 font-medium text-white transition bg-indigo-600 rounded-lg hover:bg-indigo-700"
+              >
+                Contact Us for More Info
+              </a>
 
-          <div className="text-center">
-            <a
-              onClick={handleClick}
-              className="inline-block px-6 py-3 font-medium text-white transition bg-indigo-600 rounded-lg cursor-pointer hover:bg-indigo-700"
-            >
-              Contact Us for More Info
-            </a>
+              <div>
+              <ul id="#details" className="mb-6 space-y-2 text-sm text-gray-700">
+                
+                  <li  className="flex items-center">
+                    <span className="mr-2 text-green-500">✔️</span>
+                   Email: annudev626@gmail.com 
+                  </li>
+                  <li  className="flex items-center">
+                    <span className="mr-2 text-green-500">✔️</span>
+                   Phone: +1 720-401-8646
+                  </li>
+                  <li  className="flex items-center">
+                    <span className="mr-2 text-green-500">✔️</span>
+                   GitHub: <a href="https://github.com/annu-6">Git</a>
+                  </li>
 
-            {showDetails && (
-              <div id="details" className="flex justify-center mt-6">
-                <div className="w-full max-w-md p-6 bg-white rounded-lg shadow-lg">
-                  <ul className="space-y-4 text-sm text-gray-700">
-                    <li className="flex items-center">
-                      <span className="mr-2 text-green-500">✔️</span>
-                      Email: annudev626@gmail.com
-                    </li>
-                    <li className="flex items-center">
-                      <span className="mr-2 text-green-500">✔️</span>
-                      Phone: +1 720-401-8646
-                    </li>
-                    <li className="flex items-center">
-                      <span className="mr-2 text-green-500">✔️</span>
-                      GitHub: {" "}
-                      <a
-                        href="https://github.com/annu-6"
-                        className="text-blue-500 underline"
-                      >
-                        Git
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+              </ul>
               </div>
-            )}
-          </div>
         </div>
       </div>
     </div>
@@ -216,4 +199,3 @@ const Pricing = () => {
 };
 
 export default Pricing;
-``

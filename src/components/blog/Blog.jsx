@@ -6,7 +6,7 @@ const blogPosts = [
     description:
       "Explore the most common weight loss myths and learn the science behind sustainable fat loss.",
     date: "Dec 20, 2023",
-    author: "Siddharth Tiwari",
+    author: "Annu Tiwari",
     image: "https://source.unsplash.com/300x200/?fitness,health",
   },
   {
@@ -14,7 +14,7 @@ const blogPosts = [
     description:
       "Discover the best strength-training exercises and how to execute them with proper form.",
     date: "Nov 15, 2023",
-    author: "Hypertroph Team",
+    author: "Resistance Team",
     image: "https://source.unsplash.com/300x200/?gym,strength",
   },
   {
@@ -22,7 +22,7 @@ const blogPosts = [
     description:
       "Learn how to create a meal plan that aligns with your fitness goals and busy schedule.",
     date: "Oct 10, 2023",
-    author: "Siddharth Tiwari",
+    author: "Annu Tiwari",
     image: "https://source.unsplash.com/300x200/?meal,healthy-food",
   },
   {
@@ -30,7 +30,7 @@ const blogPosts = [
     description:
       "Tips and tricks to keep your motivation high and achieve your fitness goals.",
     date: "Sep 5, 2023",
-    author: "Hypertroph Team",
+    author: "Resistance Team",
     image: "https://source.unsplash.com/300x200/?motivation,fitness",
   },
 ];

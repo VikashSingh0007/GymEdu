@@ -11,12 +11,12 @@ export const headerData = {
     ctaButtons: [
       {
         label: 'Get Started',
-        href: '#about',
+        href: 'https://www.who.int/health-topics/physical-activity',
         isPrimary: true,
       },
       {
         label: 'Learn More',
-        href: '#learn-more',
+        href: 'https://www.who.int/news-room/fact-sheets/detail/physical-activity',
         isPrimary: false,
       },
     ],
