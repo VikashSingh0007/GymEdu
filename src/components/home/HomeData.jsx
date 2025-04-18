@@ -1,6 +1,6 @@
 export const headerData = {
     backgroundImage:
-      'https://img.freepik.com/free-photo/young-fitness-man-studio_7502-5008.jpg?t=st=1732371738~exp=1732375338~hmac=e0f0084f7482b3808a04085d5cab50e722efe291c3024cb37b6fd0dac45ab8d4&w=826',
+      'https://i.postimg.cc/1RT7TzB3/banner.jpg',
     title: (
       <>
         Welcome to <span className="text-pink-400">Resistance</span>

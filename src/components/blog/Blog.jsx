@@ -7,8 +7,7 @@ const blogPosts = [
       "Explore the most common weight loss myths and learn the science behind sustainable fat loss.",
     date: "Dec 20, 2023",
     author: "Siddharth Tiwari",
-    image: "https://via.placeholder.com/300x200", // Replace with your blog image URL
-    link: "/blog/weight-loss-myths", // Replace with actual blog links
+    image: "https://source.unsplash.com/300x200/?fitness,health",
   },
   {
     title: "Top 5 Exercises for Building Strength",
@@ -16,8 +15,7 @@ const blogPosts = [
       "Discover the best strength-training exercises and how to execute them with proper form.",
     date: "Nov 15, 2023",
     author: "Hypertroph Team",
-    image: "https://via.placeholder.com/300x200", // Replace with your blog image URL
-    link: "/blog/strength-training",
+    image: "https://source.unsplash.com/300x200/?gym,strength",
   },
   {
     title: "The Art of Meal Planning for Fitness Goals",
@@ -25,8 +23,7 @@ const blogPosts = [
       "Learn how to create a meal plan that aligns with your fitness goals and busy schedule.",
     date: "Oct 10, 2023",
     author: "Siddharth Tiwari",
-    image: "https://via.placeholder.com/300x200", // Replace with your blog image URL
-    link: "/blog/meal-planning",
+    image: "https://source.unsplash.com/300x200/?meal,healthy-food",
   },
   {
     title: "How to Stay Motivated During Your Fitness Journey",
@@ -34,8 +31,7 @@ const blogPosts = [
       "Tips and tricks to keep your motivation high and achieve your fitness goals.",
     date: "Sep 5, 2023",
     author: "Hypertroph Team",
-    image: "https://via.placeholder.com/300x200", // Replace with your blog image URL
-    link: "/blog/staying-motivated",
+    image: "https://source.unsplash.com/300x200/?motivation,fitness",
   },
 ];
 
@@ -75,16 +71,6 @@ const Blog = () => {
                   <span>By {post.author}</span>
                   <span>{post.date}</span>
                 </div>
-              </div>
-
-              {/* Read More */}
-              <div className="p-6 bg-gray-50 text-center">
-                <a
-                  href={post.link}
-                  className="text-indigo-600 font-medium hover:underline"
-                >
-                  Read More →
-                </a>
               </div>
             </div>
           ))}
