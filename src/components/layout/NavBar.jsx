@@ -12,11 +12,11 @@ const navigation = [
   { name: "COACHING", href: "/coaching" },
   { name: "PRICING", href: "/pricing" },
   { name: "TRANSFORMATIONS", href: "/transformations" },
-  { name: "BLOG", href: "/blog" },
+  // { name: "BLOG", href: "/blog" },
 ];
 const contactInfo = {
-  phone: '+123-456-7890',
-  email: 'info@example.com',
+  phone: '+1720-401-8646',
+  email: 'annudev626@gmail.com',
 };
 
 const socialLinks = [

@@ -6,9 +6,9 @@ const testimonials = [
     age: 23,
     profession: "HR",
     testimonial:
-      "Hypertroph transformed me. I now know how to eat smartly and train effectively.",
+      "Resistance transformed me. I now know how to eat smartly and train effectively.",
     duration: "14 Weeks",
-    weightLost: "5 KG",
+    weightLost: "5 LBS",
   },
   {
     name: "Ankit",
@@ -17,24 +17,24 @@ const testimonials = [
     testimonial:
       "The journey was life-changing. The guidance and plans worked wonders.",
     duration: "42 Weeks",
-    weightLost: "23 KG",
+    weightLost: "23 LBS",
   },
 ];
 
 const CoachingTestimonials = () => {
   return (
-    <div className="bg-gray-100 py-16 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">
+    <div className="px-6 py-16 bg-gray-100">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="mb-8 text-4xl font-bold text-center text-gray-800">
           Real People, Real Results
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+              className="p-6 transition-shadow bg-white rounded-lg shadow-md hover:shadow-lg"
             >
-              <p className="italic text-gray-600 mb-4">
+              <p className="mb-4 italic text-gray-600">
                 "{testimonial.testimonial}"
               </p>
               <div className="text-sm text-gray-500">

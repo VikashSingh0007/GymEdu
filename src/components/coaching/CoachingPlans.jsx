@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const coachingPlans = [
   {
     title: "Coaching - 6 Months",
-    price: "₹6,600/mo",
+    price: "$6,600/mo",
     description: "The best timeframe for complete body transformation.",
     features: [
       "Lifetime Access to Course",
@@ -17,7 +18,7 @@ const coachingPlans = [
   },
   {
     title: "Coaching - 3 Months",
-    price: "₹8,833/mo",
+    price: "$8,833/mo",
     description: "Minimum time needed for meaningful results.",
     features: [
       "Lifetime Access to Course",
@@ -33,37 +34,37 @@ const coachingPlans = [
 
 const CoachingPlans = () => {
   return (
-    <div id="coaching-plans" className="bg-gray-100 py-16 px-6">
-      <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-gray-800 text-center mb-8">
+    <div id="coaching-plans" className="px-6 py-16 bg-gray-100">
+      <div className="mx-auto max-w-7xl">
+        <h2 className="mb-8 text-4xl font-bold text-center text-gray-800">
           Coaching Plans
         </h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8 sm:grid-cols-2">
           {coachingPlans.map((plan, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
+              className="p-6 transition-shadow bg-white rounded-lg shadow-md hover:shadow-lg"
             >
-              <h3 className="text-2xl font-bold text-gray-800 mb-2">
+              <h3 className="mb-2 text-2xl font-bold text-gray-800">
                 {plan.title}
               </h3>
-              <p className="text-indigo-600 text-lg font-semibold mb-4">
+              <p className="mb-4 text-lg font-semibold text-indigo-600">
                 {plan.price}
               </p>
-              <p className="text-gray-600 mb-4">{plan.description}</p>
-              <ul className="text-gray-600 mb-4 space-y-2">
+              <p className="mb-4 text-gray-600">{plan.description}</p>
+              <ul className="mb-4 space-y-2 text-gray-600">
                 {plan.features.map((feature, i) => (
                   <li key={i} className="flex items-center">
-                    <span className="text-green-500 mr-2">✔️</span> {feature}
+                    <span className="mr-2 text-green-500">✔️</span> {feature}
                   </li>
                 ))}
               </ul>
-              <a
-                href="#"
-                className="block text-center bg-indigo-600 text-white font-medium px-6 py-3 rounded-lg hover:bg-indigo-700 transition"
+              <Link
+                 to="/enroll"
+                className="block px-6 py-3 font-medium text-center text-white transition bg-indigo-600 rounded-lg hover:bg-indigo-700"
               >
                 {plan.cta}
-              </a>
+              </Link>
             </div>
           ))}
         </div>
