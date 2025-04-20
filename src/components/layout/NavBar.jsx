@@ -22,19 +22,19 @@ const contactInfo = {
 const socialLinks = [
   {
     name: 'Instagram',
-    url: 'https://www.instagram.com/rjram404/',
+    url: 'https://www.instagram.com/',
     icon: <FaInstagram className="w-5 h-5" aria-hidden="true" />,
     hoverColor: 'pink-300',
   },
   {
     name: 'Twitter',
-    url: 'https://x.com/RJ_Ram14',
+    url: 'https://x.com/',
     icon: <FaTwitter className="w-5 h-5" aria-hidden="true" />,
     hoverColor: 'blue-300',
   },
   {
     name: 'YouTube',
-    url: 'https://www.youtube.com/@the_rjram',
+    url: 'https://www.youtube.com/',
     icon: <FaYoutube className="w-5 h-5" aria-hidden="true" />,
     hoverColor: 'red-500',
   },
